@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+      <item
+        android:id="@+id/createtest"
+        android:title="Create test"
+        android:showAsAction="always"/>
+       <item
+        android:id="@+id/gomain"
+        android:title="Main"
+        android:showAsAction="always"/>
+         <item
+        android:id="@+id/details"
+        android:title="TestDetails"
+        android:showAsAction="always"/>
+    
+</menu>

@@ -1,0 +1,83 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.softkeyboard" 
+     android:versionCode="22">
+    <uses-permission android:name="android.permission.INTERNET" /> 
+     <uses-sdk android:minSdkVersion="19"/>
+     
+    <application android:label="@string/ime_name" >
+        <service
+            android:name="MyKeyboard"
+            android:permission="android.permission.BIND_INPUT_METHOD" >
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/method" />
+        </service>
+
+        <activity
+            android:name=".ImePreferences"
+            android:label="@string/settings_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".Settings"
+            android:label="Create new test" >
+             <intent-filter>
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+        </activity>
+        <activity
+            android:name=".Tests"
+            android:label="Tests" >
+             <intent-filter>
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+        </activity>
+        <activity
+            android:name=".TestDetails"
+            android:label="Details of all tests" >
+             <intent-filter>
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+             <intent-filter>
+          <action android:name="com.package.name.MyAction"/>
+          <category android:name="android.intent.category.DEFAULT"/>
+    </intent-filter>
+        </activity>
+    <activity
+        android:name=".RecordingActivity"
+        android:label="RecordTest">
+        <intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".APKActivity"
+        android:label="SelectAPK">
+        <intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+     <activity 
+        android:name=".EditTestActivity"
+        android:label="EditTest">
+        <intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    </application>
+
+</manifest>
