@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="14px" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/typeDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type Description"
+        android:layout_marginLeft="22dp"
+        android:textSize="14px"></TextView>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:layout_marginLeft="22dp"
+        android:textSize="14px"></TextView>
+
+    <TextView
+        android:id="@+id/createdDt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created Date"
+        android:layout_marginLeft="22dp"
+        android:textSize="14px" >
+    </TextView>
+    <TextView
+        android:id="@+id/recipient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipient Name"
+        android:layout_marginLeft="22dp"
+        android:textSize="14px" >
+    </TextView>
+    <TextView
+        android:id="@+id/totalObligation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Obligation"
+        android:layout_marginLeft="22dp"
+        android:textSize="14px" >
+    </TextView>
+
+</LinearLayout>
