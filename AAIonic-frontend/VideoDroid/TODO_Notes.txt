@@ -1,0 +1,15 @@
+0. Setup Splash Screen and launch app
+1. Launch Home Screen with instructions of what to do
+and a button to begin capturing media
+
+
+
+Customize interface template
+Pass the images/video/audio files from the front-end
+to the backend
+-> Prepare payload
+-> Validate, Send
+
+Process response
+Display proper image/art/audio feedback
+-> 

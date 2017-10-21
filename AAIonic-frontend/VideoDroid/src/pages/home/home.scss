@@ -1,0 +1,43 @@
+#home-header{
+    // font-size: 3em;
+    text-align: center;
+    font-weight: bold !important;
+}
+page-home {
+    // overflow: hidden;
+    // overflow-y: hidden !important;
+    color: rgba(69, 216, 81, 0.924);
+}
+
+#landing-page{
+    background-color: rgba(252, 252, 212, 0.825);
+    overflow-y: hidden !important;
+}
+
+#landing-page h1{
+    font-size: 2.25em;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(107, 9, 107);
+}
+
+
+#landing-page p{
+    margin-top: 3px;
+    font-size: 1.33em;
+    text-align: center;
+    // padding: 0.3em;
+}
+
+#landing-page button{
+    font-size:1.1em;
+    color: black;
+    font-weight: bold;
+    padding: 25px;
+}
+
+#home-button-guide p{
+    // padding-top:2.84em;
+    font-size:1.17em;
+    color:rgb(101, 101, 101);
+}

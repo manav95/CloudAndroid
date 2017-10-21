@@ -1,0 +1,30 @@
+<ion-header>
+  <!-- <ion-navbar>
+    <ion-title>
+      Contacts List
+    </ion-title>
+  </ion-navbar> -->
+</ion-header>
+
+<ion-content>
+  <div text-center>
+      <h5>Welcome to your contacts list</h5>
+
+      <button ion-button color="danger" clear (click)="onClick()">+ Add New Contact</button>
+      
+      <ion-list>
+        <ion-item *ngFor="let contact of contactsList">
+          {{ contact.first_name }}
+          {{ contact.last_name }}
+        </ion-item>  
+      </ion-list>
+      <ion-fab right edge>
+        <button ion-fab (click)="onClick()" color="danger" ><ion-icon name="add"></ion-icon></button>
+      </ion-fab>
+  </div>
+  
+
+  
+  <!-- <create-contact></create-contact> -->
+  <!-- <page-new-contact></page-new-contact> -->
+</ion-content>

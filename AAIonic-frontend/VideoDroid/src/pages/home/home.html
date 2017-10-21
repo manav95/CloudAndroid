@@ -1,0 +1,41 @@
+<ion-header>
+  <!-- <ion-navbar> -->
+    <!-- <ion-title>Home</ion-title> -->
+    <!-- <ion-title id="home-header">Welcome to AutismAssist!</ion-title> -->
+  <!-- </ion-navbar> -->
+</ion-header>
+
+<ion-content padding id="landing-page">
+  
+  <div padding text-center>
+      <img src="../assets/graphics/aa_logo_mini.png"/>
+      <h1>Autism Assist</h1>
+  </div>
+  <!-- <h3>Welcome!</h3> -->
+  <p>
+    To get started, select a media type to capture for processing
+    <!-- To get started, take a video now and save for audio and visual processing -->
+  </p>
+  <p>
+    <button ion-button round color="secondary" (click)="startVideo($event)">
+      <ion-col><ion-icon name="videocam"></ion-icon></ion-col>
+       &nbsp;Video
+    </button>
+  </p>
+  
+  <p>
+    <!-- Icons -->
+    <button ion-button icon-start color="danger" round disabled>
+      <ion-col><ion-icon name="mic"></ion-icon></ion-col>
+        
+      <!-- <ion-icon name="radio-button-on"></ion-icon> -->
+       Audio
+    </button>
+    <!-- <button ion-button round color="primary" disabled ="startVideo($event)">Capture Audio</button> -->
+  </p>
+
+  <div id="home-button-guide">
+    <p>Use the buttom navigation bar to access other sections</p>
+  </div>
+
+</ion-content>

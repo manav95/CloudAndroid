@@ -1,0 +1,31 @@
+<!-- Generated template for the CreateContactComponent component -->
+<div text-center>
+  {{text}}
+</div>
+
+<form [formGroup]="newContactEntry" (ngSubmit)="logForm()">
+
+  <ion-item>
+      <ion-label>First Name</ion-label>
+      <ion-input type="text" formControlName="firstName"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Last Name</ion-label>
+      <ion-input type="text" formControlName="lastName"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Nickname</ion-label>
+      <ion-input type="text" formControlName="nickname"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Description</ion-label>
+      <ion-textarea formControlName="description"></ion-textarea>
+    </ion-item>
+    <div padding text-center >
+      <button ion-button  type="submit" full color="secondary">Submit</button>
+      <!-- [disabled]="!newContactEntry.valid"  -->
+    </div>
+</form>
